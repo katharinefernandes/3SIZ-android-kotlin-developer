@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">appadas</string>
+    <string name="label_joker_question_hint">Aqui será exibida a pergunta da piada</string>
+    <string name="label_joker_answer_hint">Aqui será exibida a resposta da piada</string>
+    <string name="button_new_joker">Conte outra piada</string>
+    <string name="joker_question_one">Por que a aranha é o animal mais carente do mundo?</string>
+    <string name="joker_answer_one">Porque ela é um aracneedyou.</string>
+
+    <string name="joker_question_two">Por que o pinheiro não se perde na floresta?</string>
+    <string name="joker_answer_two">Porque ele tem uma pinha.</string>
+
+    <string name="joker_question_three">O que um pagodeiro foi fazer na igreja?</string>
+    <string name="joker_answer_three">Foi cantar PÁ GOD.</string>
+
+    <string name="joker_question_four">Por que o Napoleão era chamado sempre pras festas?</string>
+    <string name="joker_answer_four">Porque ele era BOM NA PARTY.</string>
+
+    <string name="joker_question_five">Qual é o rei dos queijos?</string>
+    <string name="joker_answer_five">É o reiqueijão.</string>
+
+    <string name="joker_question_six">Por que a velhinha não usa relógio?</string>
+    <string name="joker_answer_six">Porque ela é senhora.</string>
+
+    <string name="joker_question_seven">Quando os americanos comeram carne pela primeira vez?</string>
+    <string name="joker_answer_seven">Quando chegou Cristovão Com Lombo.</string>
+
+    <string name="joker_question_eight">Por que o computador foi ao médico?</string>
+    <string name="joker_answer_eight">Porque estava com um vírus.</string>
+
+    <string name="joker_question_nine">Qual é o animal mais antigo do mundo?</string>
+    <string name="joker_answer_nine">A zebra, porque ainda é em preto e branco.</string>
+
+    <string name="joker_question_ten">Por que o livro foi ao ginásio?</string>
+    <string name="joker_answer_ten">Porque queria ganhar mais volume.</string>
+
+    <string name="joker_question_eleven">O que o zero disse para o oito?</string>
+    <string name="joker_answer_eleven">Belo cinto!</string>
+
+    <string name="joker_question_twelve">Por que o lápis está sempre calmo?</string>
+    <string name="joker_answer_twelve">Porque ele tem muita ponta.</string>
+
+    <string name="joker_question_thirteen">Qual é o cúmulo do sono?</string>
+    <string name="joker_answer_thirteen">Dormir de olho aberto.</string>
+
+    <string name="joker_question_fourteen">Por que o tomate foi ao banco?</string>
+    <string name="joker_answer_fourteen">Para tirar extrato.</string>
+</resources>

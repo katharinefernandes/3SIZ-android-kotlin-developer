@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CP-01-B</string>
+    <string name="gold_icon_description">Icone de Uma Moeda de Ouro.</string>
+    <string name="app_header_title">Venda de Ouro</string>
+    <string name="qtd_gold">Digite a quantidade de ouro</string>
+    <string name="price_gold">Digite o preço por grama</string>
+    <string name="calc_values">Calcular Total</string>
+    <string name="price_total_gold">Total: R$ %1$s</string>
+    <string name="error_invalid_fields">Preencha todos os campos!</string>
+</resources>

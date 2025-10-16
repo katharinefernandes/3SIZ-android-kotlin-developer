@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/Container"
+    tools:context=".MainActivity">
+
+    <FrameLayout style="@style/Frame">
+
+        <LinearLayout
+            android:id="@+id/containerForm"
+            style="@style/ContainerForm">
+
+            <LinearLayout style="@style/ContainerHeader">
+
+                <ImageView
+                    android:id="@+id/ivIconGold"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:contentDescription="@string/gold_icon_description"
+                    android:src="@drawable/ic_gold" />
+
+                <TextView
+                    android:id="@+id/tvHeaderTitle"
+                    style="@style/HeaderTitle"
+                    android:text="@string/app_header_title" />
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/etQtdGold"
+                style="@style/EditTextForm"
+                android:hint="@string/qtd_gold"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etPriceGold"
+                style="@style/EditTextForm"
+                android:hint="@string/price_gold"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/btCalc"
+                style="@style/ButtonCalcForm"
+                android:text="@string/calc_values" />
+
+            <TextView
+                android:id="@+id/tvPriceTotal"
+                style="@style/TextViewTotalPrice"
+                android:text="@string/price_total_gold" />
+
+            <TextView
+                android:id="@+id/tvInvalidFields"
+                style="@style/TextViewInvalidFields"
+                android:text="@string/error_invalid_fields" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</ScrollView>

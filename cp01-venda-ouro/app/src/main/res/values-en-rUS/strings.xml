@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CP-01-B</string>
+    <string name="gold_icon_description">Gold Coin Icon</string>
+    <string name="app_header_title">Gold Sale</string>
+    <string name="qtd_gold">Enter the amount of gold</string>
+    <string name="price_gold">Enter the price per gram</string>
+    <string name="calc_values">Calculate Total</string>
+    <string name="price_total_gold">Total: U$ %1$s</string>
+    <string name="error_invalid_fields">Fill in all fields!</string>
+</resources>
