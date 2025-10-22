@@ -1,10 +1,15 @@
 package br.com.fiap.ludoboardgames.ui.components
 
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.shrinkVertically
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Search
@@ -41,20 +46,30 @@ fun GameSearchBar(
             modifier = Modifier.fillMaxWidth()
         )
 
-        if(searchText.isNotEmpty()) {
-            Row(
-                modifier = Modifier.fillMaxWidth()
-                    .padding(end = 8.dp),
-                horizontalArrangement = Arrangement.End
+        if (searchText.isNotEmpty()) {
+            AnimatedVisibility(
+                visible = searchText.isNotEmpty(),
+                enter = expandVertically(),
+                exit = shrinkVertically(),
             ) {
-                Text(
-                    "Limpar filtro",
-                    color = Color.Blue,
-                    modifier = Modifier.clickable {
-                        onClear()
-                    }
-                )
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(end = 8.dp),
+                    horizontalArrangement = Arrangement.End
+                ) {
+                    Text(
+                        "Limpar filtro",
+                        color = Color.Blue,
+                        modifier = Modifier.clickable {
+                            onClear()
+                        }
+                    )
+                }
             }
+        } else {
+            // Ocupa o mesmo espaço vertical da Row
+            Spacer(modifier = Modifier.height(24.dp))
         }
     }
 }
