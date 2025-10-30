@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CP-C</string>
+    <string name="text_price">R$ %.2f</string>
+</resources>
