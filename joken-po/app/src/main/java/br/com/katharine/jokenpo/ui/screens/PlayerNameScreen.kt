@@ -24,9 +24,9 @@ import br.com.katharine.jokenpo.ui.components.PokemonLogo
 import br.com.katharine.jokenpo.ui.theme.JokenpoTheme
 
 @Composable
-fun PlayerNameScreen(modifier: Modifier = Modifier, onNavigateToBattle: (String) -> Unit) {
+fun PlayerNameScreen(onNavigateToBattle: (String) -> Unit) {
     Column(
-        modifier = modifier
+        modifier = Modifier
             .fillMaxSize()
             .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -41,6 +41,7 @@ fun PlayerNameScreen(modifier: Modifier = Modifier, onNavigateToBattle: (String)
 
         OutlinedTextField(
             value = playerName,
+            singleLine = true,
             label = { Text("Digite seu nome") },
             modifier = Modifier.fillMaxWidth(),
             onValueChange = { playerName = it })

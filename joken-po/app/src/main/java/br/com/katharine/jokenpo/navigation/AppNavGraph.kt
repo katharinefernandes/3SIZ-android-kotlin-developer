@@ -11,26 +11,32 @@ import br.com.katharine.jokenpo.ui.screens.PlayerNameScreen
 
 @Composable
 fun AppNavGraph(
+    // componente que ajuda na navegação do app
     navController: NavHostController
 ) {
     NavHost(
         navController = navController,
         startDestination = Routes.Input.route
     ) {
+        // ensina como é a tela de startDestination
         composable(route = Routes.Input.route) {
             PlayerNameScreen {
                 navController.navigate(Routes.Result.createRoute(it))
             }
         }
 
-        composable(route = Routes.Result.route, arguments = listOf(
+        // ensina como é as demais telas
+        composable(
+            route = Routes.Result.route, arguments = listOf(
             navArgument(Routes.Result.Args.PROFILE_NAME) {
                 type = NavType.StringType
                 defaultValue = "profileName"
             }
         )) {
             val profileName = it.arguments?.getString(Routes.Result.Args.PROFILE_NAME)
-            JoKenPokemonScreen(profileName!!)
+            JoKenPokemonScreen(profileName!!) {
+                navController.popBackStack()
+            }
         }
     }
 }
