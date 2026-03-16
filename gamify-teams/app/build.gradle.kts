@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "br.com.katharinefernandes.jokenpo"
+    namespace = "br.com.katharinefernandes.gamifyteams"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "br.com.katharinefernandes.jokenpo"
+        applicationId = "br.com.katharinefernandes.gamifyteams"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -56,7 +56,4 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-
-    val nav_version = "2.9.5"
-    implementation("androidx.navigation:navigation-compose:$nav_version")
 }
