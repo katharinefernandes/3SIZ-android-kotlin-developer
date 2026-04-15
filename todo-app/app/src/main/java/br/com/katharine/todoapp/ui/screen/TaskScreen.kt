@@ -95,6 +95,9 @@ fun TaskScreen(viewModel: TaskViewModel) {
                     items(tasks) { task ->
                         TaskItem(
                             task = task,
+                            onCheckedChange = { checked ->
+                                viewModel.onTaskChecked(task, checked)
+                            },
                             onDelete = {
                                 viewModel.removeTask(task)
                             }

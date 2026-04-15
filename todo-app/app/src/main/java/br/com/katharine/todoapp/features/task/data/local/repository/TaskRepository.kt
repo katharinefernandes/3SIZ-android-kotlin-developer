@@ -11,6 +11,13 @@ class TaskRepository(
         dao.insert(task)
     }
 
+    suspend fun updateTaskStatus(
+        taskId: Int, isDone:
+        Boolean
+    ) {
+        dao.updateTaskStatus(taskId, isDone)
+    }
+
     suspend fun delete(task: Task) {
         dao.delete(task)
     }

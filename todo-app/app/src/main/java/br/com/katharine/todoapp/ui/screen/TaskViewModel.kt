@@ -18,6 +18,15 @@ class TaskViewModel(
         }
     }
 
+    fun onTaskChecked(task: Task, checked: Boolean) {
+        viewModelScope.launch {
+            repository.updateTaskStatus(
+                taskId = task.id,
+                isDone = checked
+            )
+        }
+    }
+
     fun removeTask(task: Task) {
         viewModelScope.launch {
             repository.delete(task)

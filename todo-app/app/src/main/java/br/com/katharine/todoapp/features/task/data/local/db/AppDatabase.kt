@@ -5,7 +5,10 @@ import androidx.room.RoomDatabase
 import br.com.katharine.todoapp.features.task.data.local.dao.TaskDao
 import br.com.katharine.todoapp.features.task.data.local.entity.Task
 
-@Database(entities = [Task::class], version = 1)
+@Database(
+    entities = [Task::class], version = 2,
+    exportSchema = true
+)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun taskDao(): TaskDao
 }

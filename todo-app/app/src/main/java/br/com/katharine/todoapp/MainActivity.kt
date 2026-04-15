@@ -6,6 +6,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.room.Room
 import br.com.katharine.todoapp.features.task.data.local.db.AppDatabase
+import br.com.katharine.todoapp.features.task.data.local.migration.MIGRATION_1_2
 import br.com.katharine.todoapp.features.task.data.local.repository.TaskRepository
 import br.com.katharine.todoapp.ui.screen.TaskScreen
 import br.com.katharine.todoapp.ui.screen.TaskViewModel
@@ -16,10 +17,8 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         val db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java,
-            "task_db"
-        ).build()
+            applicationContext, AppDatabase::class.java, "task_db"
+        ).addMigrations(MIGRATION_1_2).build()
         val repository = TaskRepository(db.taskDao())
         val viewModel = TaskViewModel(repository)
         setContent {
